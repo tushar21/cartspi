@@ -1,0 +1,25 @@
+{
+  "name": "cartspi",
+  "version": "1.0.0",
+  "description": "Demo APP API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar21/cartspi.git"
+  },
+  "author": "Mandar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tushar21/cartspi/issues"
+  },
+  "homepage": "https://github.com/tushar21/cartspi#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.42.0",
+    "swagger-ui-express": "^4.0.2"
+  }
+}
