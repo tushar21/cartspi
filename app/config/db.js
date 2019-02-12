@@ -23,7 +23,6 @@ module.exports.connect = ()=>{
 
 
     console.log('Connecting to DB');
- 
 
     sequelize.authenticate()
     .then(()=>{
@@ -31,6 +30,10 @@ module.exports.connect = ()=>{
         for(let model in Schemas){
             models[model] = sequelize.define(model, Schemas[model]);
         }
+
+        sequelize.sync().then(()=>{
+            console.log("Tables created");
+        })
 
         console.log(models, "models")
     })
